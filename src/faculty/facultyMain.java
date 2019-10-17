@@ -16,11 +16,11 @@ public class facultyMain {
 	
 	static Random r = new Random();
 	
-	public static int input() {
+	public static int input() throws InputMismatchException {
 		int faculty = 0;
 		boolean input;
-		Scanner sc = new Scanner(System.in);
 		do {
+			Scanner sc = new Scanner(System.in);
 			System.out.print("Insert a number for a faculty: ");
 			try {
 				faculty = sc.nextInt();
@@ -34,7 +34,6 @@ public class facultyMain {
 				input = false;
 			}
 		} while (!input);
-		sc.close();
 		return faculty;
 	}
 	
