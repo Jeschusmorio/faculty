@@ -16,7 +16,7 @@ public class facultyMain {
 	
 	static Random r = new Random();
 	
-	public static int input() throws InputMismatchException {
+	public static int input() {
 		int faculty = 0;
 		boolean input;
 		do {
